@@ -21,7 +21,7 @@ def predict(image_path):
 
     return malignant, normal
 
-@app.post("/predict/")
+@app.post("/predict")
 async def predict_image(file: UploadFile):
     # Save the uploaded image temporarily
     with open("temp_image.jpg", "wb") as temp_image:
@@ -53,6 +53,6 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["POST"],
+    allow_headers=["application/json"],
 )
