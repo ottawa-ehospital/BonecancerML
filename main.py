@@ -7,9 +7,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 
 app = FastAPI()
+CORS = CORS(app)
 
 # Allow all origins for CORS
-origins = ["*"]
+origins = ["https://e-react-frontend-55dbf7a5897e.herokuapp.com/Bonecancerml","http://localhost:3000"]
 
 # Set up CORS middleware
 app.add_middleware(
