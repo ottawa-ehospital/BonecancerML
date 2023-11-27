@@ -6,3 +6,4 @@ keras
 pydantic
 python-multipart
 Pillow
+CORS
