@@ -10,7 +10,7 @@ app = FastAPI()
 CORS = CORS(app)
 
 # Allow all origins for CORS
-origins = ["https://e-react-frontend-55dbf7a5897e.herokuapp.com/Bonecancerml","http://localhost:3000"]
+origins = ["https://e-react-frontend-55dbf7a5897e.herokuapp.com/Bonecancerml","http://localhost:3000","https://*.herokuapp.com","https://e-react-frontend-55dbf7a5897e.herokuapp.com"]
 
 # Set up CORS middleware
 app.add_middleware(
